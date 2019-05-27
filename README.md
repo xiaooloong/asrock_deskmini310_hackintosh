@@ -1,19 +1,23 @@
 # Asrock deskmini 310 hackintosh
 
+2019/05/27: 基于原作者的成果，更新 clover，替换 FakeSMC 为 VirtualSMC，清理了一些文件
+
 2019/05/14: Upgrade to 10.14.15, everything is alright.
 
 ## Gears
 CPU: Intel Coffee Lake i7-8700
 
-RAM: Kingston DDR4-2666 16GBx2
+RAM: Kingston DDR4-2666 8GBx2 (KHX2666C15S48G)
 
-SSD: Intel 760p 512GB M.2 PCIE
+SSD for OS X: sm961 256g (SAMSUNG MZVPW256HEGL-00000)
 
-HDD1: Intel 545s 512GB SATAIII
+SSD fro Windows: m5p 128g (PLEXTOR PX-128M5Pro)
+
+HDD1: wd 1t (WDC WD10JPLX-00MBPT1)
 
 WIFI/BT: DW1560/BCM94352Z WIFI/Bluetooth module mini PCIE/NGFF M2 [taobao link](https://item.taobao.com/item.htm?spm=a1z09.2.0.0.74d62e8d2XfNbV&id=524391843184&_u=lbsepu1ca39)
 
-CPU cooler: NOCTUA NH L9i Fan + CRYORIG C7 Cu
+CPU cooler: NOCTUA NH L9i
 
 ## Important task
 - Please keep BIOS in 3.x version
