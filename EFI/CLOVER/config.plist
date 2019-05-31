@@ -287,7 +287,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>slide=0</string>
+		<string>slide=0 -v</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -508,7 +508,7 @@
 	<key>SystemParameters</key>
 	<dict>
 		<key>InjectKexts</key>
-		<string>Detect</string>
+		<string>Yes</string>
 		<key>InjectSystemID</key>
 		<true/>
 	</dict>
