@@ -15,7 +15,7 @@ SSD fro Windows: m5p 128g (PLEXTOR PX-128M5Pro)
 
 HDD1: wd 1t (WDC WD10JPLX-00MBPT1)
 
-WIFI/BT: DW1560/BCM94352Z WIFI/Bluetooth module mini PCIE/NGFF M2 [taobao link](https://item.taobao.com/item.htm?spm=a1z09.2.0.0.74d62e8d2XfNbV&id=524391843184&_u=lbsepu1ca39)
+WIFI/BT: `BCM943602CS` or `DW1560`/`BCM94352Z`
 
 CPU cooler: NOCTUA NH L9i
 
