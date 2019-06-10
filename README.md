@@ -25,3 +25,6 @@ WIFI/蓝牙: `BCM943602CS` or `DW1560`/`BCM94352Z`
 * 理论上任何版本的 bios 都可以，我已经加进去了华擎的补丁。这个补丁在华擎 z390 主板上工作良好。
 * 我之前一直使用 `bcm94352z`(戴尔起的名字叫 `dw1560`)，完全够用，而且 win10 支持很好，linux 在驱动管理器里启用闭源驱动即可使用。后来换了 `bcm943602cs` 发现效果更好，但是 win10 需要安装苹果提供的 bootcamp 驱动，linux 还没试过。
 * 网上有提到 L9i 猫扇会压弯主板，其实不是风扇的问题，是 cpu 扣具太紧了。把 cpu 扣具上的螺丝适当拧松就不弯了。（当然猫扇也别大力拧）
+* `i7-8700` 在这个机型上性能受供电限制。推荐换成 `i5-8500`。
+
+![benchmark](https://raw.githubusercontent.com/xiaooloong/asrock_deskmini310_hackintosh/master/snapshot/benchmark.png)
