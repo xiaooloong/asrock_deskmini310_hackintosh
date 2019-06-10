@@ -1,13 +1,11 @@
 # Asrock deskmini 310 hackintosh
 
-2019/05/27: 基于原作者的成果，更新 clover，替换 FakeSMC 为 VirtualSMC，清理了一些文件
+基于原作者的成果，更新 clover，替换 FakeSMC 为 VirtualSMC，清理了一些文件
 
-2019/05/14: Upgrade to 10.14.15, everything is alright.
-
-## Gears
+## 我的配置
 CPU: Intel Coffee Lake i7-8700
 
-RAM: Kingston DDR4-2666 8GBx2 (KHX2666C15S48G)
+内存: Kingston DDR4-2666 8GBx2 (KHX2666C15S48G)
 
 SSD for OS X: sm961 256g (SAMSUNG MZVPW256HEGL-00000)
 
@@ -15,78 +13,14 @@ SSD fro Windows: m5p 128g (PLEXTOR PX-128M5Pro)
 
 HDD1: wd 1t (WDC WD10JPLX-00MBPT1)
 
-WIFI/BT: `BCM943602CS` or `DW1560`/`BCM94352Z`
+WIFI/蓝牙: `BCM943602CS` or `DW1560`/`BCM94352Z`
 
-CPU cooler: NOCTUA NH L9i
+散热器: NOCTUA NH L9i
 
-## Important task
-- Please keep BIOS in 3.x version
-- After copied all kexts to system, please remerber to use tool - Kext Utility to rebuild cache.
+## 备注
 
-## For BIOS 4.x
-DSDT Patch
-
-```code
-comment: Fix RTC _STA bug (fix asrock new bios failed to boot)
-Find: A00A9353 54415301
-Replace: A00A910A FF0BFFFF
-```
-
-## Works
-- [x] Ethernet/WIFI/Bluetooth/Audio/USB 2.0, 3.0(type-A, type-C)
-
-- [x] DP/HDMI dual monitor output
-
-- [x] Shutdown、Sleep
-
-- [x] Graphics(Intel UHD 630)
-
-## Issues
-~~If you are using FCPX, system will hang/freeze in FCPX when you add some video effects. 
-Please disable background rendering in FCPX first.
-It's macOS 10.14.3 issue, someone report that 10.14.4 beta has already fixed this issue, let's wait the version release.(finger crossed!)~~
-
-After upgraded to 10.14.4, FCPX is running smoothly, enable background rendering and everything is fine.
-
-## Snapshot
-![About](https://github.com/liminghuang/asrock_deskmini310_hackintosh/raw/master/snapshot/about.png)
-
-![IGPU](https://github.com/liminghuang/asrock_deskmini310_hackintosh/raw/master/snapshot/IGPU.png)
-
-![bluetooth](https://github.com/liminghuang/asrock_deskmini310_hackintosh/raw/master/snapshot/bluetooth.png)
-
-![ethernet](https://github.com/liminghuang/asrock_deskmini310_hackintosh/raw/master/snapshot/ethernet.png)
-
-![usb](https://github.com/liminghuang/asrock_deskmini310_hackintosh/raw/master/snapshot/usb.png)
-
-![video_1](https://github.com/liminghuang/asrock_deskmini310_hackintosh/raw/master/snapshot/video_1.png)
-
-## Dual monitor output - DP and HDMI
-![video_2](https://github.com/liminghuang/asrock_deskmini310_hackintosh/raw/master/snapshot/dual_monitor1.png)
-
-![video_3](https://github.com/liminghuang/asrock_deskmini310_hackintosh/raw/master/snapshot/dual_monitor2.png)
-
-
-## Tools - Here are some tools you need...
-
-Clover Configurator
-
-MultiBeast
-
-MaciASL
-
-Kext Utility
-
-IORegistryExplorer
-
-Hackintool
-
-Kext Updater
-
-## Notes
-After macOS installed done, please leave FakeSMC.kext only in /Library/Extensions and use Kext Updater tool to install other kexts again. Kext Updater will help you to manage what dictionary is good for kext driver to install.
-
-*ps. I remove my serial number and others private info in SMBIOS, please refill those info by Clover first.
-
-# Why I choose hackintosh? 
-[My youtube link](https://youtu.be/d5WUizoIxy0) <-- Language is Mandarin
+* 请使用原版系统安装，安装后将 EFI 目录放置于 EFI 分区内即可，不要乱动系统分区。
+* 唯一需要在系统分区操作的，是使用 clover 安装工具安装 “安装 RC scripts 到目标分区”，用来完善 nvram。
+* 理论上任何版本的 bios 都可以，我已经加进去了华擎的补丁。这个补丁在华擎 z390 主板上工作良好。
+* 我之前一直使用 `bcm94352z`(戴尔起的名字叫 `dw1560`)，完全够用，而且 win10 支持很好，linux 在驱动管理器里启用闭源驱动即可使用。后来换了 `bcm943602cs` 发现效果更好，但是 win10 需要安装苹果提供的 bootcamp 驱动，linux 还没试过。
+* 网上有提到 L9i 猫扇会压弯主板，其实不是风扇的问题，是 cpu 扣具太紧了。把 cpu 扣具上的螺丝适当拧松就不弯了。（当然猫扇也别大力拧）
