@@ -29,3 +29,8 @@ WIFI/蓝牙: `BCM943602CS` or `DW1560`/`BCM94352Z`
 * `i7-8700` 在这个机型上性能受供电限制。推荐换成 `i5-8500`。
 
 ![benchmark](https://raw.githubusercontent.com/xiaooloong/asrock_deskmini310_hackintosh/master/snapshot/benchmark.png)
+
+## 感谢
+
+* [liminghuang](https://github.com/liminghuang) 提供的[全套配置](https://github.com/liminghuang/asrock_deskmini310_hackintosh)
+* [camgame](http://i.pcbeta.com/space-uid-535201.html) 提供的 [usb 补丁](http://bbs.pcbeta.com/forum.php?mod=redirect&goto=findpost&ptid=1799808&pid=48716684)
