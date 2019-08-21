@@ -1,6 +1,6 @@
 # Asrock deskmini 310 hackintosh
 
-基于原作者的成果，更新 clover， ~~替换 FakeSMC 为 VirtualSMC，~~ 清理了一些文件
+基于原作者的成果，更新 clover， 替换 FakeSMC 为 VirtualSMC，更新并清理了一些文件
 
 ## 我的配置
 CPU: Intel Coffee Lake i7-8700
@@ -27,7 +27,9 @@ WIFI/蓝牙: `BCM943602CS` or `DW1560`/`BCM94352Z`
 * 我之前一直使用 `bcm94352z`(戴尔起的名字叫 `dw1560`)，完全够用，而且 win10 支持很好，linux 在驱动管理器里启用闭源驱动即可使用。后来换了 `bcm943602cs` 发现效果更好，但是 win10 需要安装苹果提供的 bootcamp 驱动，linux 还没试过。
 * 我买到的这块 `bcm943602cs`（三天线）不知道什么来路，蓝牙居然是 4.2 的。
 * 网上有提到 L9i 猫扇会压弯主板，其实不是风扇的问题，是 cpu 扣具太紧了。把 cpu 扣具上的螺丝适当拧松就不弯了（当然猫扇也别大力拧）。
-* `FakeSMC` 很久没有更新了，所以我本来已经更换成了比较新的 `VirtualSMC` 的，但是最近 Clover 更新了之后唤醒变成开机，检查过后居然是 `VirtualSMC` 的问题，所以这个仓库又换回  `FakeSMC` 了。
+* ~~`FakeSMC` 很久没有更新了，所以我本来已经更换成了比较新的 `VirtualSMC` 的，但是最近 Clover 更新了之后唤醒变成开机，检查过后居然是 `VirtualSMC` 的问题，所以这个仓库又换回  `FakeSMC` 了。~~
+* 新版 Clover 和 `VirtualSMC` 导致睡眠唤醒变重启的问题已修复，所以换回 `VirtualSMC`
+* 修改为 layout `11` 后，对前面板的耳麦接口描述更准确，并且 `FaceTime` 也可以使用麦克风了。不过上方的独立麦克风接口依然无法使用。
 * `i7-8700` 在这个机型上性能受供电限制。推荐换成 `i5-8500`。
 
 ![benchmark](https://raw.githubusercontent.com/xiaooloong/asrock_deskmini310_hackintosh/master/snapshot/benchmark.png)
