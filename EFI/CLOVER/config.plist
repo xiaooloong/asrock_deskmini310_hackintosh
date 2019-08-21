@@ -310,11 +310,6 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
-		<key>Audio</key>
-		<dict>
-			<key>Inject</key>
-			<integer>3</integer>
-		</dict>
 		<key>FakeID</key>
 		<dict>
 			<key>ATI</key>
@@ -441,7 +436,7 @@
 		<key>Scan</key>
 		<true/>
 		<key>Theme</key>
-		<string>random</string>
+		<string>embedded</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
