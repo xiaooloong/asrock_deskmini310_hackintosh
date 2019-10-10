@@ -2,6 +2,8 @@
 
 基于原作者的成果，更新 clover， 替换 FakeSMC 为 VirtualSMC，更新并清理了一些文件
 
+适用于 macOS Mojave (10.14.*) 和 macOS Catalina (10.15)
+
 ## 我的配置
 CPU: Intel Coffee Lake i7-8700
 
