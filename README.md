@@ -15,7 +15,7 @@ SSD fro Windows: m5p 128g (PLEXTOR PX-128M5Pro)
 
 HDD1: wd 1t (WDC WD10JPLX-00MBPT1)
 
-WIFI/蓝牙: `BCM943602CS` or `DW1560`/`BCM94352Z`
+WIFI/蓝牙: `BCM943602CS` (`DW1560`/`BCM94352Z` 用户请把 kexts/Off 下的驱动移动到 kexts/Other 里)
 
 散热器: NOCTUA NH L9i
 
